@@ -32,3 +32,18 @@ function toCelsius(fahrenheit) {
 }
 
 let value = toCelsius();
+
+// const val2 = (() => 10)();
+
+{
+  function stop() {
+    const x = 10; // statement 1
+    return x; // statement 2
+  }
+  const val2 = stop();
+}
+
+const val2 = function stop() {
+  const x = 10; // statement 1
+  return x; // statement 2
+}
