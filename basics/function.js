@@ -43,7 +43,14 @@ let value = toCelsius();
   const val2 = stop();
 }
 
-const val2 = function stop() {
-  const x = 10; // statement 1
-  return x; // statement 2
-}
+// const val2 = function stop() {
+//   const x = 10; // statement 1
+//   return x; // statement 2
+// }();
+
+const val2 = () => {
+  const x = 10;
+  return x;
+};
+
+console.log(val2)
