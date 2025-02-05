@@ -25,26 +25,19 @@ const person = {
 };
 console.log("Original object:", person);
 
-const copiedPerson = { ...person };
-console.log("Copied object:", copiedPerson);
+const copy = { ...person };
+console.log("Copied object:", copy);
 
-const updatedPerson = { ...person, city: "New York" };
-console.log("Updated object:", updatedPerson);
+const Update = { ...person, city: "New York" };
+console.log("Updated object:", Update);
 
-const extraInfo = { country: "USA" };
-const mergedPerson = { ...person, ...extraInfo };
-console.log("Merged object:", mergedPerson);
+const Modify = { ...person };
+Modify.age = 21;
+console.log("Modified copied object:", Modify);
+console.log("Original obj remains unchanged:", person);
 
-const modifiedPerson = { ...person };
-modifiedPerson.age = 35;
-console.log("Modified copied object:", modifiedPerson);
-console.log("Original object remains unchanged:", person);
-
-const jobInfo = { job: "Engineer", experience: 5 };
-const fullPerson = { ...person, ...jobInfo };
+const job = { job: "Engineer", experience: 5 };
+const fullPerson = { ...person, ...job };
 console.log("Full person details:", fullPerson);
 
 console.log("Checking original after merging:", person);
-
-const overridePerson = { ...person, age: 40 };
-console.log("Overridden age:", overridePerson);
