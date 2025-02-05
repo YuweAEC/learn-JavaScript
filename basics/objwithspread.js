@@ -36,8 +36,3 @@ Modify.age = 21;
 console.log("Modified copied object:", Modify);
 console.log("Original obj remains unchanged:", person);
 
-const job = { job: "Engineer", experience: 5 };
-const fullPerson = { ...person, ...job };
-console.log("Full person details:", fullPerson);
-
-console.log("Checking original after merging:", person);
