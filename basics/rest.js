@@ -65,5 +65,5 @@ console.log("Other details:", otherDetails);
 
 const numbers = [1, 2, 3, 4, 5];
 const newNumbers = [...numbers, 6, 7, 8];
-console.log("Original numbers:", numbers);
-console.log("New numbers with additional values:", newNumbers);
+console.log("Original numbers:", numbers); // will print the cons no part
+console.log("New numbers with additional values:", newNumbers); // here it will print the entire no part
