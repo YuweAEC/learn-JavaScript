@@ -32,3 +32,38 @@ function subt1(x) {
   }
   
   abc(1, 2, 3, 4, 5);
+
+
+
+  //////////////////
+
+
+
+  function sum(...numbers) {
+    let total = 0;
+    for (let num of numbers) {
+        total += num;
+    }
+    console.log("Sum:", total);
+}
+sum(1, 2, 3, 4, 5);
+
+const [first, second, ...rest] = [10, 20, 30, 40, 50];
+console.log("First:", first);
+console.log("Second:", second);
+console.log("Rest of the numbers:", rest);
+
+const student = {
+    name: "Yuvraj",
+    age: 21,
+    grade: "A",
+    city: "Asansol"
+};
+const { name, ...otherDetails } = student;
+console.log("Name:", name);
+console.log("Other details:", otherDetails);
+
+const numbers = [1, 2, 3, 4, 5];
+const newNumbers = [...numbers, 6, 7, 8];
+console.log("Original numbers:", numbers);
+console.log("New numbers with additional values:", newNumbers);
