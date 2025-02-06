@@ -118,3 +118,16 @@ const y = function () {
 };
 
 x(); // Function call/ Invoking the function
+
+
+
+let x = myFunction(4, 3);
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
