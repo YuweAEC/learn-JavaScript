@@ -7,15 +7,37 @@ const evenOrodd = (num) => {
     }
 };
 
-evenOrodd();
+evenOrodd(4);
 
-const isDivisiblebythree = (num) => {
-    if (num % 2 === 0) {
-        console.log("yes");
+const isDivisibleByThree = (num) => {
+    if (num % 3 === 0) {
+        return true;
     }
     else {
-        console.log("no");
+        return false;
     }
 };
 
-isDivisiblebythree();
+isDivisibleByThree(4);
+
+const isEven = (num) => {
+    if (num % 2 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+};
+
+isEven(4);
+
+const isDivisibleByThreeAndTwo = (num) => {
+    if (num % 2 === 0 , num % 3 ===0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+};
+
+isDivisibleByThreeAndTwo(4);
