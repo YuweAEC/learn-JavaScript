@@ -8,3 +8,4 @@ export default function add(a, b) {
 }
 
 export { name, morning };
+
